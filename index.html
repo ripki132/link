@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ripki cihuy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Sora', 'sans-serif'],
+              'body-md': ['Hanken Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-[#0e0e0f] text-[#e5e2e3] overflow-x-hidden font-body-md selection:bg-[#00f0ff] selection:text-[#006970] relative">
+    
+    <!-- Background Atmospheric Orbs -->
+    <div id="orb1" class="fixed w-[400px] h-[400px] rounded-full blur-[80px] -z-10 opacity-15 pointer-events-none animate-pulse-orb bg-[#00dbe9] top-[-100px] left-[-100px]"></div>
+    <div id="orb2" class="fixed w-[400px] h-[400px] rounded-full blur-[80px] -z-10 opacity-15 pointer-events-none animate-pulse-orb bg-[#cf5cff] bottom-[-100px] right-[-100px] [animation-delay:-5s]"></div>
+
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 inset-x-0 w-full z-50 flex justify-between items-center px-6 h-16 max-w-2xl mx-auto bg-transparent opacity-0 animate-fade-in-down">
+      <div class="text-xl font-bold text-[#dbfcff] font-display">ripki cihuy</div>
+      <button class="text-[#dbfcff] p-2 hover:bg-white/10 backdrop-blur-md transition-all rounded-full active:scale-95 duration-200">
+        <i data-lucide="share" class="w-5 h-5"></i>
+      </button>
+    </header>
+
+    <main class="relative z-10 pt-24 pb-8 px-6 max-w-2xl mx-auto flex flex-col items-center">
+      <!-- Profile Section -->
+      <section class="w-full flex flex-col items-center gap-4 mb-8 opacity-0 animate-scale-in">
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-[#dbfcff] to-[#ecb2ff] opacity-50 blur-md"></div>
+          <img 
+            class="w-32 h-32 rounded-full object-cover border-[3px] border-[#dbfcff] relative z-10" 
+            alt="Creator Profile" 
+            src="https://i.ibb.co.com/Xx6FKmdR/IMG-20260721-WA0004.jpg" 
+            onerror="this.src='https://ui-avatars.com/api/?name=Creator&background=0D8ABC&color=fff&size=128'"
+          />
+        </div>
+        <div class="text-center">
+          <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-[#dbfcff] drop-shadow-[0_0_8px_rgba(219,252,255,0.5)] tracking-tight">
+            RIPKI SUKA PISANG GORENG
+          </h1>
+          <p class="text-[#b9cacb] max-w-[80%] mx-auto mt-2 text-lg h-8 flex items-center justify-center">
+            <span id="typewriter" class="inline-block border-r-2 border-[#dbfcff] pr-1 animate-blink-cursor min-w-[2px] h-[1.6em] whitespace-pre"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Link Stack -->
+      <div class="w-full flex flex-col gap-4">
+        <a 
+          class="bg-white/5 backdrop-blur-[20px] border border-[#dbfcff]/10 p-5 rounded-xl flex items-center justify-between group transition-all duration-300 hover:bg-white/10 hover:border-[#dbfcff]/40 opacity-0 animate-fade-in-up hover:scale-[1.02] hover:-translate-y-[2px] hover:shadow-[0_0_20px_rgba(0,219,233,0.15)] active:scale-95 active:translate-y-0" 
+          href="https://chat.whatsapp.com/H1QQ10evvnUAFpi8mi2KS3"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="animation-delay: 0.5s;"
+        >
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#201f20] rounded-lg border border-[#3b494b] group-hover:border-[#dbfcff] transition-colors">
+              <i data-lucide="users" class="w-6 h-6 text-[#dbfcff]"></i>
+            </div>
+            <span class="text-xl font-semibold text-[#e5e2e3] font-display">Grup WhatsApp</span>
+          </div>
+          <div class="text-[#b9cacb] opacity-40 group-hover:opacity-100 transition-opacity">
+            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+        <a 
+          class="bg-white/5 backdrop-blur-[20px] border border-[#dbfcff]/10 p-5 rounded-xl flex items-center justify-between group transition-all duration-300 hover:bg-white/10 hover:border-[#dbfcff]/40 opacity-0 animate-fade-in-up hover:scale-[1.02] hover:-translate-y-[2px] hover:shadow-[0_0_20px_rgba(0,219,233,0.15)] active:scale-95 active:translate-y-0" 
+          href="https://whatsapp.com/channel/0029VaiFhoz8kyyM2SsR6A0l"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="animation-delay: 0.65s;"
+        >
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#201f20] rounded-lg border border-[#3b494b] group-hover:border-[#dbfcff] transition-colors">
+              <i data-lucide="mic" class="w-6 h-6 text-[#dbfcff]"></i>
+            </div>
+            <span class="text-xl font-semibold text-[#e5e2e3] font-display">Saluran WhatsApp</span>
+          </div>
+          <div class="text-[#b9cacb] opacity-40 group-hover:opacity-100 transition-opacity">
+            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+          </div>
+        </a>
+
+        <a 
+          class="bg-white/5 backdrop-blur-[20px] border border-[#dbfcff]/10 p-5 rounded-xl flex items-center justify-between group transition-all duration-300 hover:bg-white/10 hover:border-[#dbfcff]/40 opacity-0 animate-fade-in-up hover:scale-[1.02] hover:-translate-y-[2px] hover:shadow-[0_0_20px_rgba(0,219,233,0.15)] active:scale-95 active:translate-y-0" 
+          href="https://discord.gg/Ygs5zWMCr"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="animation-delay: 0.8s;"
+        >
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-[#201f20] rounded-lg border border-[#3b494b] group-hover:border-[#dbfcff] transition-colors">
+              <i data-lucide="gamepad-2" class="w-6 h-6 text-[#dbfcff]"></i>
+            </div>
+            <span class="text-xl font-semibold text-[#e5e2e3] font-display">Discord Server</span>
+          </div>
+          <div class="text-[#b9cacb] opacity-40 group-hover:opacity-100 transition-opacity">
+            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+          </div>
+        </a>
+      </div>
+
+      <!-- Skills / Tags -->
+      <div class="w-full mt-8 flex flex-wrap justify-center gap-2 opacity-0 animate-fade-in-up" style="animation-delay: 1s;">
+        <span class="px-3 py-1 bg-[#2a2a2b] border border-[#3b494b] rounded-full text-[12px] font-medium tracking-widest text-[#dbfcff]">UI DESIGN</span>
+        <span class="px-3 py-1 bg-[#2a2a2b] border border-[#3b494b] rounded-full text-[12px] font-medium tracking-widest text-[#ecb2ff]">WEB3</span>
+        <span class="px-3 py-1 bg-[#2a2a2b] border border-[#3b494b] rounded-full text-[12px] font-medium tracking-widest text-[#dbfcff]">CONTENT</span>
+        <span class="px-3 py-1 bg-[#2a2a2b] border border-[#3b494b] rounded-full text-[12px] font-medium tracking-widest text-[#ecb2ff]">TECH</span>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 flex flex-col items-center gap-4 bg-transparent relative z-10 opacity-0 animate-fade-in-up" style="animation-delay: 1.2s;">
+      <div class="text-[12px] font-medium tracking-widest text-[#b9cacb] opacity-60">© 2024 DIGITAL CREATOR</div>
+      <div class="flex gap-4">
+        <a class="text-[12px] font-medium tracking-widest text-[#ecb2ff] hover:text-[#dbfcff] transition-colors" href="#">Privacy</a>
+        <a class="text-[12px] font-medium tracking-widest text-[#ecb2ff] hover:text-[#dbfcff] transition-colors" href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
